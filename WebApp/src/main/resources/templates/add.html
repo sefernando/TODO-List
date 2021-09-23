@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="./show.html">Show</a>
+    <div class="add-item-wrapper">
+      <div class="header">
+        <h1>New TODO Item</h1>
+      </div>
+      <div class="add-item">
+        <form action="" id="item-form">
+          <div class="form-item">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+
+          <div class="form-item">
+            <label for="description">Description</label>
+            <input type="text" id="description" name="description" required />
+          </div>
+
+          <div class="form-item">
+            <label for="target-date">Target Date</label>
+            <input type="date" id="target-date" name="target-date" required />
+          </div>
+
+          <div class="form-item">
+            <input type="submit" value="ADD" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./JS/itemController.js"></script>
+    <script src="./JS/itemForm.js"></script>
+  </body>
+</html>
